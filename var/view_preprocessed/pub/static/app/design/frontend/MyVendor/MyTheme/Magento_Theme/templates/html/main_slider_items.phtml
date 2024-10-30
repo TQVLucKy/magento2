@@ -1,0 +1,13 @@
+<div class="carousel-container"><div class="your-carousel-class"><div><img src="<?= $block->getViewFileUrl('images/images.jpg') ?>" alt="Image 1"></div><div><img src="<?= $block->getViewFileUrl('images/images.jpg') ?>" alt="Image 2"></div><div><img src="<?= $block->getViewFileUrl('images/images.jpg') ?>" alt="Image 3"></div></div></div><script>
+    require(['jquery', 'slick'], function($) {
+        $('.your-carousel-class').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows: true,
+            prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+            nextArrow: '<button type="button" class="slick-next">Next</button>'
+        });
+    });</script>
