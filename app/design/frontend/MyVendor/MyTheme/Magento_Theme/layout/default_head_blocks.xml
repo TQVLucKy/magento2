@@ -1,14 +1,13 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
   <head>
-    <!-- <css src="css/font-awesome.css" /> -->
     <css src="css/header_banner.css"/>
     <css src="css/header_left_text.css"/>
     <css src="css/footer_left_text.css"/>
     <css src="css/footer_paymentlist.css"/>
     <css src="css/slick.css"/>
     <css src="css/slick-theme.css"/>
+    <css src="css/main_slider_items.css"/>
     <script src="js/slick.min.js"/>
-    <!-- <script src="js/main_slider_items.js"/> -->
   </head>
 </page>

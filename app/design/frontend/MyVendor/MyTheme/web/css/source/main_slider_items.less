@@ -1,0 +1,145 @@
+.carousel-title {
+    margin-bottom: 44px;
+
+    strong {
+        width: 100%;
+        font-family: 'AktivGrotesk_medium';
+        text-transform: uppercase;
+        font-size: 24px;
+        text-align: center;
+        display: block;
+        letter-spacing: 0.08em;
+        line-height: 28px;
+        margin: 0;
+    }
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+
+    .your-carousel-class {
+        width: 80%;
+
+        div {
+            box-sizing: border-box;
+            position: relative;
+        }
+
+
+        .slick-slide {
+            margin: 0 13px;
+        }
+
+        .product-item-info {
+            margin-bottom: 30px;
+
+            .secondary-addto-links {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                display: block;
+                z-index: 10;
+
+                .towishlist {
+                    text-decoration: none;
+                    color: #000;
+                    display: block;
+                    font-size: 20px;
+                }
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+            }
+
+            .product-item-name {
+                text-transform: uppercase;
+                text-decoration: none;
+                color: #000;
+                letter-spacing: 0.08em;
+                font-family: 'AktivGrotesk_Regular', sans-serif;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .buttonspace {
+        margin: auto;
+
+        .carousel-class-prev,
+        .carousel-class-next {
+            z-index: 1;
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+            border: none;
+            width: 60px;
+            height: 60px;
+            background-image: url(https://www.kingliving.com/pub/static/version1730256472/frontend/Magento/blank/en_US/Playhouse_CustomWidget/images/widget-slider-arrow.png);
+            background-size: cover;
+            background-color: transparent;
+
+            transition: all 0.5s ease-in-out;
+        }
+
+        .carousel-class-next:hover,
+        .carousel-class-prev:hover,
+        .carousel-class-next:active,
+        .carousel-class-prev:active,
+        .carousel-class-next:focus,
+        .carousel-class-prev:focus {
+            background-image: url(https://www.kingliving.com/pub/static/version1730256472/frontend/Magento/blank/en_US/Playhouse_CustomWidget/images/widget-arrow-grey.png);
+            background-size: cover;
+            background-color: transparent;
+            border: none;
+            transform: scale(0.95);
+        }
+        .carousel-class-prev,
+        .carousel-class-prev:hover,
+        .carousel-class-prev:active,
+        .carousel-class-prev:focus {
+            transform: rotate(180deg);
+
+        }
+
+        .carousel-class-next:not(:hover),
+        .carousel-class-prev:not(:hover) {
+            background-image: url(https://www.kingliving.com/pub/static/version1730256472/frontend/Magento/blank/en_US/Playhouse_CustomWidget/images/widget-slider-arrow.png);
+            background-size: cover;
+            background-color: transparent;
+        }
+    }
+
+    .slick-dots {
+        display: flex;
+        padding: 5px 13px;
+        width: 98%;
+
+        li {
+            list-style: none;
+            width: 100%;
+            height: 3px;
+            margin: 0;
+
+            button {
+                width: 100%;
+                height: 3px;
+                padding: 0;
+                margin: 0;
+                border-radius: 0;
+                background: #E5E5E5;
+                border: none;
+                cursor: pointer;
+                outline: none;
+            }
+        }
+
+        li.slick-active button {
+            background: #000;
+        }
+    }
+}

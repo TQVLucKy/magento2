@@ -9,12 +9,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <update handle="default_head_blocks"/>
     <head>
-        <!-- <css src="css/font-awesome.css" /> -->
-        <!-- <css src="css/source/header_left_text.css"/>
-        <css src="css/source/footer_left_text.css"/>
-        <css src="css/source/footer_paymentlist_text.css"/>
-        <css src="css/source/header_banner.css"/> -->
-    </head>
+    <css src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" src_type="url"/>
+</head>
     <body>
         <attribute name="id" value="html-body"/>
         <block name="require.js" class="Magento\Framework\View\Element\Template" template="Magento_Theme::page/js/require_js.phtml" />
@@ -124,11 +120,12 @@
             <container name="content.aside" label="Main Content Aside"/>
             <container name="content.bottom" label="Main Content Bottom"/>
             <!-- Thêm vào đây -->
-            <container name="main-slide" label="Main Content Slide" as="main-slider" htmlTag="div" htmlClass="Main content Slide">
+            <container name="main-slide" label="Main Content Slide" as="main-slider" htmlTag="div" htmlClass="main-slide">
                 <block class="Magento\Framework\View\Element\Template" name="main.slide.items" template="Magento_Theme::html/main_slider_items.phtml"/>
             </container>
-            
         </referenceContainer>
+
+
         <referenceContainer name="page.bottom.container">
             <container name="page.bottom" label="Before Page Footer" htmlTag="div" htmlClass="content"/>
         </referenceContainer>
