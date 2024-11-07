@@ -1,3 +1,8 @@
+.carousel-main{
+    position: relative;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
 .carousel-title {
     margin-bottom: 44px;
 
@@ -20,7 +25,9 @@
 
     .your-carousel-class {
         width: 80%;
-
+        @media (max-width:1024px) {
+            width: 100%;
+        }
         div {
             box-sizing: border-box;
             position: relative;
@@ -112,8 +119,11 @@
             background-size: cover;
             background-color: transparent;
         }
+        @media (max-width:1024px) {
+            display: none;
+        }
     }
-
+    
     .slick-dots {
         display: flex;
         padding: 5px 13px;
