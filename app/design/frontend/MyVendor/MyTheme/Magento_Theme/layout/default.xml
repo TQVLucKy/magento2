@@ -61,7 +61,7 @@
                 <block class="Magento\Framework\View\Element\Template" name="header.banner" template="Magento_Theme::html/header_banner.phtml"/>
             </container>
 
-            <container name="header-wrapper" label="Page Header" as="header-wrapper" htmlTag="div" htmlClass="header content">
+            <container name="header-wrapper" label="Page Header" as="header-wrapper" htmlTag="div" htmlClass="header">
                 <!-- nên thêm vào đây -->
                 <block class="Magento\Framework\View\Element\Template" name="header.left.text" template="Magento_Theme::html/header_left_text.phtml"/>
             </container>

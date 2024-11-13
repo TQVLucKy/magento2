@@ -8,6 +8,6 @@
     <css src="css/slick.css"/>
     <css src="css/slick-theme.css"/>
     <css src="css/main_slider_items.css"/>
-    <script src="js/slick.min.js"/>
+    <script src="js/slick.min.js"/> <!-- cái này đã có sẵn thư viện trong magento rồi không cần phải add vào nữa á -->
   </head>
 </page>
