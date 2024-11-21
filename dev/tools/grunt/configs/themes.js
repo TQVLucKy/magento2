@@ -19,6 +19,15 @@
  *
  */
 module.exports = {
+    MyTheme:{
+        area: 'frontend',
+        name: 'MyVendor/MyTheme',
+        locale:'en_US',
+        files: [
+            'css/styles',
+        ],
+        dsl:'less'
+    },
     blank: {
         area: 'frontend',
         name: 'Magento/blank',

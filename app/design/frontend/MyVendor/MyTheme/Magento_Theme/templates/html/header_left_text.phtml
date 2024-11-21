@@ -2,6 +2,11 @@
     .page-header {
         z-index: 1000;
     }
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
 </style>
 <div id="overlay"></div>
 <div class="header_left_text">
@@ -218,7 +223,13 @@
                 </div>
             </li>
         </ul>
-
+    </div>
+    <div class="header-left-mobile">
+        <div class="menu-button">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
     </div>
     <div class="header-center">
         <img src="<?= $block->getViewFileUrl('images/academybrand-Logo.avif') ?>" alt="Logo" />
@@ -227,146 +238,7 @@
         <ul>
             <li>
                 <a class="search-btn">SEARCH</a>
-                <div class="search" id="search">
-                    <div class="search-inner">
-                        <div class="search-searchbar">
-                            <div class="search-form">
-                                <div class="search-inputicon-wrapper">
-                                    <svg width="24px" height="24px"
-                                        viewBox="0 0 24 24"
-                                        version="1.1"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <defs></defs>
-                                        <g id="Icon/Desktop/Search"
-                                            stroke="currentColor"
-                                            stroke-width="1" fill="none"
-                                            fill-rule="evenodd">
-                                            <g
-                                                transform="translate(2.000000, 2.000000)"
-                                                stroke="currentColor"
-                                                class="stroke-color"
-                                                stroke-width="2">
-                                                <path
-                                                    d="M8,14.9987 C12.1457079,14.9987 15.5,11.7494194 15.5,7.74986666 C15.5,3.74942967 12.1458629,0.5 8,0.5 C3.85413706,0.5 0.5,3.74942967 0.5,7.74986666 C0.5,11.7494194 3.85429207,14.9987 8,14.9987 Z"
-                                                    id="Stroke-1"></path>
-                                                <path
-                                                    d="M13.4644,13.4407 L19.4974,19.4737"
-                                                    id="Stroke-3"
-                                                    stroke-linecap="square"></path>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <input type="search" placeholder="Search...">
-                                <div class="search-dropdown">
-                                    <div class="seach-dropdown-default">
-                                        <div class="dropdown-trending">
-                                            <div class="dropdown-trending-title">
-                                                <h4>Popular Searches</h4>
-                                            </div>
-                                            <div class="dropdown-options">
-                                                <div class="dropdown-option">
-                                                    <a href>volley short</a>
-                                                </div>
-                                                <div class="dropdown-option">
-                                                    <a href>linen</a>
-                                                </div>
-                                                <div class="dropdown-option">
-                                                    <a href>linen shirt</a>
-                                                </div>
-                                                <div class="dropdown-option">
-                                                    <a href>Volley Short</a>
-                                                </div>
-                                                <div class="dropdown-option">
-                                                    <a href>riviera</a>
-                                                </div>
-                                                <div class="dropdown-option">
-                                                    <a href>linen pant</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown-category">
-                                            <div class="dropdown-category-items">
-                                                <div class="dropdown-category-item">
-                                                    <div class="dropdown-category-title">
-                                                        Gender
-                                                    </div>
-                                                    <ul>
-                                                        <li><a>Academy Brand</a></li>
-                                                        <li><a>Academy Women</a></li>
-                                                        <li><a>Academy Kids</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="dropdown-category-item">
-                                                    <div class="dropdown-category-title">
-                                                        Colour
-                                                    </div>
-                                                    <ul>
-                                                        <li><a>Blue</a></li>
-                                                        <li><a>Green</a></li>
-                                                        <li><a>Neutrals</a></li>
-                                                        <li><a>Pink</a></li>
-                                                        <li><a>White</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="dropdown-category-item">
-                                                    <div class="dropdown-category-title">
-                                                        Product Type
-                                                    </div>
-                                                    <ul>
-                                                        <li><a>Shorts</a></li>
-                                                        <li><a>Shirt L/S</a></li>
-                                                        <li><a>Shirt S/S</a></li>
-                                                        <li><a>Pants</a></li>
-                                                        <li><a>Dress</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown-content">
-                                            <div class="dropdown-content-info">
-                                                <h4>See 122 results for "Volley Short"</h4>
-                                                <span
-                                                    class="dropdown-content-icon"><svg
-                                                        viewBox="0 0 56 56"
-                                                        style="width: 14px;height: 14px;"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M45.34 29.564l-25.785 25.785c-0.869 0.869-2.259 0.869-3.128 0l-5.768-5.768c-0.869-0.869-0.869-2.259 0-3.128l18.452-18.452-18.452-18.452c-0.869-0.869-0.869-2.259 0-3.128l5.768-5.768c0.869-0.869 2.259-0.869 3.128 0l25.785 25.785c0.869 0.869 0.869 2.259 0 3.128z"></path>
-                                                    </svg></span>
-                                            </div>
-                                            <div class="dropdown-content-title">
-                                                <h4>Product Suggestions</h4>
-                                            </div>
-                                            <div class="dropdown-content-results">
-                                                <?php for ($i = 0; $i < 12; $i++): ?>
-                                                    <div class="content-result">
-                                                        <img
-                                                            src="https://cdn.shopify.com/s/files/1/0004/3686/3040/files/QuincyJacket-AlmondTan_600x600.jpg?v=1710987482">
-                                                        <div class="result-details">
-                                                            <div
-                                                                class="result-details-title"><a href="#">Quince
-                                                                    Jacket</a></div>
-                                                            <div
-                                                                class="product-item-price">$169.95</div>
 
-                                                        </div>
-                                                    </div>
-                                                <?php endfor ?>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="search-close">
-                                <svg viewBox="0 0 16 14">
-                                    <path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </li>
             <li><a>STORES</a></li>
             <li><a>ACCOUNT</a></li>
@@ -375,6 +247,342 @@
             <li><a class="header-cart">CART(1)</a></li>
         </ul>
     </div>
+    <div class="header-right-mobile">
+        <ul>
+            <li><a class="search-btn">
+                    <svg width="24px" height="24px"
+                        viewBox="0 0 24 24"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs></defs>
+                        <g id="Icon/Desktop/Search"
+                            stroke="currentColor"
+                            stroke-width="1" fill="none"
+                            fill-rule="evenodd">
+                            <g
+                                transform="translate(2.000000, 2.000000)"
+                                stroke="currentColor"
+                                class="stroke-color"
+                                stroke-width="2">
+                                <path
+                                    d="M8,14.9987 C12.1457079,14.9987 15.5,11.7494194 15.5,7.74986666 C15.5,3.74942967 12.1458629,0.5 8,0.5 C3.85413706,0.5 0.5,3.74942967 0.5,7.74986666 C0.5,11.7494194 3.85429207,14.9987 8,14.9987 Z"
+                                    id="Stroke-1"></path>
+                                <path
+                                    d="M13.4644,13.4407 L19.4974,19.4737"
+                                    id="Stroke-3"
+                                    stroke-linecap="square"></path>
+                            </g>
+                        </g>
+                    </svg></a></li>
+
+            <li><a><svg width="24" height="24" fill="none"
+                        viewBox="0 0 24 24"
+                        style="width: 20px; height:20px;"
+                        stroke="currentColor">
+                        <path fill="none"
+                            d="M5,20v-1c0-3.9,3.1-7,7-7l0,0c3.9,0,7,3.1,7,7v1 M12,12c2.2,0,4-1.8,4-4s-1.8-4-4-4S8,5.8,8,8S9.8,12,12,12z"></path>
+                    </svg></a></li>
+            <li>
+                <a class="header-cart">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M0 20V4.995l1 .006v.015l4-.002V4c0-2.484 1.274-4 3.5-4C10.518 0 12 1.48 12 4v1.012l5-.003v.985H1V19h15V6.005h1V20H0zM11 4.49C11 2.267 10.507 1 8.5 1 6.5 1 6 2.27 6 4.49V5l5-.002V4.49z"
+                            fill="currentColor"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="menu-left" id="menu">
+    <div class="close-menu-left">
+        <svg class="Icon Icon--close " role="presentation"
+            viewBox="0 0 16 14">
+            <path d="M15 0L1 14m14 0L1 0"
+                stroke="currentColor"
+                fill="none" fill-rule="evenodd"></path>
+        </svg>
+    </div>
+    <ul class="metismenu">
+        <li>
+            <button class="accordion">
+                MENS
+                <span></span>
+            </button>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <button class="accordion">EDITS
+                            <span></span></button><!--fa arrow ko có tác dụng. nhớ xóa-->
+                        <div class="panel">
+                            <ul>
+                                <li><a href>The Holiday
+                                        Edit</a></li>
+                                <li><a href>Colours Of
+                                        Spring</a></li>
+                                <li><a href>Best Of
+                                        Linen</a></li>
+                                <li><a href>Spring
+                                        Textures</a></li>
+                                <li><a href>Academy
+                                        Icons</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="accordion">CLOTHING
+                            <span></span>
+                        </button>
+                        <div class="panel">
+                            <ul>
+                                <li><a href>View
+                                        All</a></li>
+                                <li><a href>Shorts</a></li>
+                                <li><a href>Long Sleeve
+                                        Shirts</a></li>
+                                <li><a href>Short Sleeve
+                                        Shirts</a></li>
+                                <li><a href>Polo
+                                        Shirts</a></li>
+                                <li><a href>Tops &
+                                        Tees</a></li>
+                                <li><a href>Swim</a></li>
+                                <li><a href>Pants &
+                                        Chinos</a></li>
+                                <li><a href>Long Sleeve
+                                        Tops</a></li>
+                                <li><a href>Sweats</a></li>
+                                <li><a href>Jackets &
+                                        Outerwear</a></li>
+                                <li><a
+                                        href>Knitwear</a></li>
+                                <li><a
+                                        href>Accessories</a></li>
+                                <li><a href>Sale</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <button class="accordion">
+                WOMENS
+                <span></span>
+            </button>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <button class="accordion">EDITS
+                            <span></span></button>
+                        <div class="panel">
+                            <ul>
+                                <li><a href>The Getaway
+                                        Edit</a></li>
+                                <li><a href>The Colour
+                                        Edit</a></li>
+                                <li><a href>Live In
+                                        Linen</a></li>
+                                <li><a href>Best
+                                        Sellers</a></li>
+                                <li><a href>Academy
+                                        Capsule</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="accordion">CLOTHING
+                            <span></span>
+                        </button>
+                        <div class="panel">
+                            <ul>
+                                <li><a href>View
+                                        All</a></li>
+                                <li><a href>New
+                                        Arrivals</a></li>
+                                <li><a href>Shorts</a></li>
+                                <li><a href>Short Sleeve
+                                        Shirts</a></li>
+                                <li><a href>Long Sleeve
+                                        Shirts</a></li>
+                                <li><a href>Tops &
+                                        Tees</a></li>
+                                <li><a href>Sets</a></li>
+                                <li><a href>Dresses</a></li>
+                                <li><a href>Pants</a></li>
+                                <li><a href>Sweats</a></li>
+                                <li><a
+                                        href>Knitwear</a></li>
+                                <li><a href>Jackets</a></li>
+                                <li><a href>Long Sleeve
+                                        Tops</a></li>
+                                <li><a
+                                        href>Accessories</a></li>
+                                <li><a href>Sale</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <button class="accordion">
+                KIDS
+                <span></span>
+            </button>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <button class="accordion">Academy
+                            Kids<span></span></button>
+                        <div class="panel">
+                            <ul>
+                                <li><a href>View
+                                        All</a></li>
+                                <li><a href>New
+                                        Arrivals</a></li>
+                                <li><a href>Shirts</a></li>
+                                <li><a href>Shorts</a></li>
+                                <li><a href>Tees</a></li>
+                                <li><a href>Swim</a></li>
+                                <li><a href>Sets</a></li>
+                                <li><a href>Pants</a></li>
+                                <li><a href>Tops</a></li>
+                                <li><a href>Sweats</a></li>
+                                <li><a href>Jackets</a></li>
+                                <li><a href>Sale</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <button class="accordion">
+                ACCESSORIES
+                <span></span>
+            </button>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <button class="accordion">EDITS<span></span></button>
+                        <div class="panel">
+                            <ul>
+                                <li><a href>The Holiday
+                                        Edit</a></li>
+                                <li><a href>Colours Of
+                                        Spring</a></li>
+                                <li><a href>Best Of
+                                        Linen</a></li>
+                                <li><a href>Spring
+                                        Textures</a></li>
+                                <li><a href>Academy
+                                        Icons</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="accordion">CLOTHING
+                            <span></span>
+                        </button>
+                        <div class="panel">
+                            <ul>
+                                <li><a href>View
+                                        All</a></li>
+                                <li><a href>Shorts</a></li>
+                                <li><a href>Long Sleeve
+                                        Shirts</a></li>
+                                <li><a href>Short Sleeve
+                                        Shirts</a></li>
+                                <li><a href>Polo
+                                        Shirts</a></li>
+                                <li><a href>Tops &
+                                        Tees</a></li>
+                                <li><a href>Swim</a></li>
+                                <li><a href>Pants &
+                                        Chinos</a></li>
+                                <li><a href>Long Sleeve
+                                        Tops</a></li>
+                                <li><a href>Sweats</a></li>
+                                <li><a href>Jackets &
+                                        Outerwear</a></li>
+                                <li><a
+                                        href>Knitwear</a></li>
+                                <li><a
+                                        href>Accessories</a></li>
+                                <li><a href>Sale</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <button class="accordion">
+                SALE
+                <span></span>
+            </button>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <button class="accordion">EDITS<span></span></button>
+                        <div class="panel">
+                            <ul>
+                                <li><a href>The Holiday
+                                        Edit</a></li>
+                                <li><a href>Colours Of
+                                        Spring</a></li>
+                                <li><a href>Best Of
+                                        Linen</a></li>
+                                <li><a href>Spring
+                                        Textures</a></li>
+                                <li><a href>Academy
+                                        Icons</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="accordion">CLOTHING
+                            <span></span>
+                        </button>
+                        <div class="panel">
+                            <ul>
+                                <li><a href>View
+                                        All</a></li>
+                                <li><a href>Shorts</a></li>
+                                <li><a href>Long Sleeve
+                                        Shirts</a></li>
+                                <li><a href>Short Sleeve
+                                        Shirts</a></li>
+                                <li><a href>Polo
+                                        Shirts</a></li>
+                                <li><a href>Tops &
+                                        Tees</a></li>
+                                <li><a href>Swim</a></li>
+                                <li><a href>Pants &
+                                        Chinos</a></li>
+                                <li><a href>Long Sleeve
+                                        Tops</a></li>
+                                <li><a href>Sweats</a></li>
+                                <li><a href>Jackets &
+                                        Outerwear</a></li>
+                                <li><a
+                                        href>Knitwear</a></li>
+                                <li><a
+                                        href>Accessories</a></li>
+                                <li><a href>Sale</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <ul>
+        <li class="linkitem">Account</li>
+        <li class="linkitem">Wishlist</li>
+    </ul>
 </div>
 <div class="sidebar-cart" id="cart">
     <div class="drawer-header">
@@ -581,7 +789,10 @@
                                 </button>
                             </div>
                             <div class="item-bagbe">
-                                Buy 2 Save 25%
+                                New
+                            </div>
+                            <div class="item-bagbe-secondary">
+                                25% Off
                             </div>
                         </div>
                         <div class="item-title">
@@ -615,11 +826,181 @@
 
     </div>
 </div>
+<div class="search" id="search">
+    <div class="search-inner">
+        <div class="search-searchbar">
+            <div class="search-form">
+                <div class="search-inputicon-wrapper">
+                    <svg width="24px" height="24px"
+                        viewBox="0 0 24 24"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs></defs>
+                        <g id="Icon/Desktop/Search"
+                            stroke="currentColor"
+                            stroke-width="1" fill="none"
+                            fill-rule="evenodd">
+                            <g
+                                transform="translate(2.000000, 2.000000)"
+                                stroke="currentColor"
+                                class="stroke-color"
+                                stroke-width="2">
+                                <path
+                                    d="M8,14.9987 C12.1457079,14.9987 15.5,11.7494194 15.5,7.74986666 C15.5,3.74942967 12.1458629,0.5 8,0.5 C3.85413706,0.5 0.5,3.74942967 0.5,7.74986666 C0.5,11.7494194 3.85429207,14.9987 8,14.9987 Z"
+                                    id="Stroke-1"></path>
+                                <path
+                                    d="M13.4644,13.4407 L19.4974,19.4737"
+                                    id="Stroke-3"
+                                    stroke-linecap="square"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <input type="search" placeholder="Search...">
+                <div class="search-dropdown">
+                    <div class="seach-dropdown-default">
+                        <div class="dropdown-trending">
+                            <div class="dropdown-trending-title">
+                                <h4>Popular Searches</h4>
+                            </div>
+                            <div class="dropdown-options">
+                                <div class="dropdown-option">
+                                    <a href>volley short</a>
+                                </div>
+                                <div class="dropdown-option">
+                                    <a href>linen</a>
+                                </div>
+                                <div class="dropdown-option">
+                                    <a href>linen shirt</a>
+                                </div>
+                                <div class="dropdown-option">
+                                    <a href>Volley Short</a>
+                                </div>
+                                <div class="dropdown-option">
+                                    <a href>riviera</a>
+                                </div>
+                                <div class="dropdown-option">
+                                    <a href>linen pant</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-category">
+                            <div class="dropdown-category-items">
+                                <div class="dropdown-category-item">
+                                    <div class="dropdown-category-title">
+                                        Gender
+                                    </div>
+                                    <ul>
+                                        <li><a>Academy Brand</a></li>
+                                        <li><a>Academy Women</a></li>
+                                        <li><a>Academy Kids</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-category-item">
+                                    <div class="dropdown-category-title">
+                                        Colour
+                                    </div>
+                                    <ul>
+                                        <li><a>Blue</a></li>
+                                        <li><a>Green</a></li>
+                                        <li><a>Neutrals</a></li>
+                                        <li><a>Pink</a></li>
+                                        <li><a>White</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-category-item">
+                                    <div class="dropdown-category-title">
+                                        Product Type
+                                    </div>
+                                    <ul>
+                                        <li><a>Shorts</a></li>
+                                        <li><a>Shirt L/S</a></li>
+                                        <li><a>Shirt S/S</a></li>
+                                        <li><a>Pants</a></li>
+                                        <li><a>Dress</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-content">
+                            <div class="dropdown-content-info">
+                                <h4>See 122 results for "Volley Short"</h4>
+                                <span
+                                    class="dropdown-content-icon"><svg
+                                        viewBox="0 0 56 56"
+                                        style="width: 14px;height: 14px;"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M45.34 29.564l-25.785 25.785c-0.869 0.869-2.259 0.869-3.128 0l-5.768-5.768c-0.869-0.869-0.869-2.259 0-3.128l18.452-18.452-18.452-18.452c-0.869-0.869-0.869-2.259 0-3.128l5.768-5.768c0.869-0.869 2.259-0.869 3.128 0l25.785 25.785c0.869 0.869 0.869 2.259 0 3.128z"></path>
+                                    </svg></span>
+                            </div>
+                            <div class="dropdown-content-title">
+                                <h4>Product Suggestions</h4>
+                            </div>
+                            <div class="dropdown-content-results">
+                                <?php for ($i = 0; $i < 12; $i++): ?>
+                                    <div class="content-result">
+                                        <img
+                                            src="<?= $block->getViewFileUrl('images/QuincyJacket-AlmondTan_600x600.webp') ?>">
+                                        <div class="result-details">
+                                            <div
+                                                class="result-details-title"><a href="#">Quince
+                                                    Jacket</a></div>
+                                            <div
+                                                class="product-item-price">$169.95</div>
 
-<script>
+                                        </div>
+                                    </div>
+                                <?php endfor ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-close">
+                <svg viewBox="0 0 16 14">
+                    <path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <script>
     require(['jquery', 'slick'], function($) {
         $(document).ready(function() {
+            //menu-left
+            $('#overlay').on('click', function() {
+                $('#overlay').hide();
+                $('#menu').removeClass('show');
+                $('#cart').removeClass("showcart");
+                $(".CollectionFilters").removeClass('show');
+            })
+            $('.header-left-mobile').on('click', function() {
+                $('#menu').addClass('show');
+                $('#overlay').toggle();
+            })
+            $('.Icon--close').on('click', function() {
+                $('#menu').removeClass('show');
+                $('#overlay').toggle();
+            })
+            // hidden another panel
+            $(".accordion").on("click", function() {
+                var panel = $(this).next(".panel");
+                var isPanelOpen = panel.hasClass("showpanel");
 
+
+                if (!isPanelOpen) {
+                    panel.addClass("showpanel").slideDown();
+                    $(this).addClass("active");
+
+                    $(this).parent().siblings().children(".panel").slideUp().removeClass("showpanel");
+                    $(this).parent().siblings().children(".accordion").removeClass("active");
+                } else {
+                    panel.removeClass("showpanel").slideUp();
+                    $(this).removeClass("active");
+                }
+            });
             // toggle megamenu
             $('.header-list-items').mouseenter(function() {
                 $('.megamenu').removeClass('is-expanded');
@@ -636,9 +1017,9 @@
                 $('#overlay').toggle();
             });
             // close cart
-            $('.drawer-close, #overlay').on('click', function() {
+            $('.drawer-close').on('click', function() {
                 $('#cart').removeClass("showcart");
-                $('#overlay').toggle();
+                $('#overlay').hide();
             })
 
             //show side-cart
@@ -669,7 +1050,7 @@
                 prevArrow: $('.carousel-prev'),
                 nextArrow: $('.carousel-next')
             });
-
+            
             $('.search-btn, .search-close').on('click', function() {
                 $("#search").toggleClass("active");
                 $(".search-dropdown").toggleClass("active");
@@ -684,11 +1065,30 @@
                 speed: 500,
                 slidesToShow: 4,
                 slidesToScroll: 2,
-                arrows: false
+                arrows: false,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 5,
+                    }
+                }, {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
+                    }
+                }, {
+                    breakpoint: 475,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                    }
+                }]
             });
 
 
 
         });
     });
-</script>
+</script> -->

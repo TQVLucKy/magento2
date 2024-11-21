@@ -9,6 +9,9 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <update handle="default_head_blocks"/>
     <head>
+     <script src="js/main_category.js"/>
+     <script src="js/header_left_text.js"/> 
+     <script src="js/main_slider_items.js"/> 
     <css src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" src_type="url"/>
 </head>
     <body>
@@ -57,12 +60,13 @@
                         </arguments>
                     </block>
                 </container> -->
-                <!-- nên thêm vào đây -->
+
+                <!-- add here -->
                 <block class="Magento\Framework\View\Element\Template" name="header.banner" template="Magento_Theme::html/header_banner.phtml"/>
             </container>
 
             <container name="header-wrapper" label="Page Header" as="header-wrapper" htmlTag="div" htmlClass="header">
-                <!-- nên thêm vào đây -->
+                <!-- add here -->
                 <block class="Magento\Framework\View\Element\Template" name="header.left.text" template="Magento_Theme::html/header_left_text.phtml"/>
             </container>
         </referenceContainer>
@@ -102,6 +106,7 @@
                     </block>
                 </block>
             </block>
+            <referenceBlock name="navigation.sections" remove="true"/>
             <container name="top.container" as="topContainer" label="After Page Header Top" htmlTag="div" htmlClass="top-container"/>
             <block class="Magento\Theme\Block\Html\Breadcrumbs" name="breadcrumbs" as="breadcrumbs"/>
         </referenceContainer>
@@ -119,9 +124,11 @@
             <container name="content" label="Main Content Area"/>
             <container name="content.aside" label="Main Content Aside"/>
             <container name="content.bottom" label="Main Content Bottom"/>
-            <!-- Thêm vào đây -->
+            <!-- add here -->
             <container name="main-slide" label="Main Content Slide" as="main-slider" htmlTag="div" htmlClass="main-slide">
-                <block class="Magento\Framework\View\Element\Template" name="main.slide.items" template="Magento_Theme::html/main_slider_items.phtml"/>
+                <!-- <block class="Magento\Framework\View\Element\Template" name="main.slide.items" template="Magento_Theme::html/main_slider_items.phtml"/> -->
+                <block class="Magento\Framework\View\Element\Template" name="main_category" template="Magento_Theme::html/main_category.phtml"/>
+                
             </container>
         </referenceContainer>
 
