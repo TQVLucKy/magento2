@@ -63,8 +63,6 @@ class GitHubDriver extends VcsDriver
             throw new \InvalidArgumentException(sprintf('The GitHub repository URL %s is invalid.', $this->url));
         }
 
-        assert(is_string($match[3]));
-        assert(is_string($match[4]));
         $this->owner = $match[3];
         $this->repository = $match[4];
         $this->originUrl = strtolower($match[1] ?? (string) $match[2]);
@@ -237,7 +235,7 @@ class GitHubDriver extends VcsDriver
                     $key = $match[1];
                     continue;
                 }
-                if (Preg::isMatchStrictGroups('{^\[(.*)\](?:\s*#.*)?$}', $match[2], $match2)) {
+                if (Preg::isMatchStrictGroups('{^\[(.*?)\](?:\s*#.*)?$}', $match[2], $match2)) {
                     foreach (array_map('trim', Preg::split('{[\'"]?\s*,\s*[\'"]?}', $match2[1])) as $item) {
                         $result[] = ['type' => $match[1], 'url' => trim($item, '"\' ')];
                     }

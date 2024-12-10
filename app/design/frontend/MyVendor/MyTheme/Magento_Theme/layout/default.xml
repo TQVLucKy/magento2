@@ -127,7 +127,8 @@
             <!-- add here -->
             <container name="main-slide" label="Main Content Slide" as="main-slider" htmlTag="div" htmlClass="main-slide">
                 <!-- <block class="Magento\Framework\View\Element\Template" name="main.slide.items" template="Magento_Theme::html/main_slider_items.phtml"/> -->
-                <block class="Magento\Framework\View\Element\Template" name="main_category" template="Magento_Theme::html/main_category.phtml"/>
+                <!-- <block class="Magento\Framework\View\Element\Template" name="main_category" template="Magento_Theme::html/main_category.phtml"/> -->
+                <!-- <block class="Magento\Framework\View\Element\Template" name="contact" template="Magento_Theme::html/contact.phtml"/> -->
                 
             </container>
         </referenceContainer>

@@ -5663,6 +5663,166 @@ div[data-content-type='video'] video {
 .product-info-stock-sku .configurable-variation-qty {
   display: none;
 }
+a {
+  text-decoration: none;
+}
+.main-contact {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-top: 53px;
+  display: flex;
+}
+.main-contact .contact-left {
+  flex: 1 1 50%;
+  padding-right: 15px;
+}
+.main-contact .contact-left .fqa-intro {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #c4c4c4;
+}
+.main-contact .contact-left .fqa-intro .fqa-title {
+  font-size: 30px;
+  line-height: 25px;
+  font-family: 'AktivGrotesk_Hairline', sans-serif;
+  margin-bottom: 17px;
+}
+.main-contact .contact-left .fqa-intro a {
+  display: inline-block;
+  color: #1d1d1d;
+  font-family: 'AktivGrotesk_Bold', sans-serif;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+  margin-top: 8px;
+}
+.main-contact .contact-left .contact-form {
+  padding-top: 43px;
+}
+.main-contact .contact-left .contact-form h1 {
+  font-size: 30px;
+  line-height: 25px;
+  font-family: 'AktivGrotesk_Hairline', sans-serif;
+  margin-bottom: 20px;
+}
+.main-contact .contact-left .contact-form .feedback {
+  margin-bottom: 25px;
+}
+.main-contact .contact-left .contact-form .feedback a {
+  text-decoration: underline;
+  font-family: 'AktivGrotesk_Bold';
+  font-weight: bold;
+}
+.main-contact .contact-left .fieldset {
+  border: 0;
+  margin: 0 0 30px;
+  padding: 0;
+  letter-spacing: -.31em;
+}
+.main-contact .contact-left .fieldset .field {
+  margin: 0 0 13px;
+  box-sizing: border-box;
+}
+.main-contact .contact-left .fieldset .field input::placeholder,
+.main-contact .contact-left .fieldset .field textarea::placeholder {
+  color: #1d1d1d;
+}
+.main-contact .contact-left .fieldset .field input,
+.main-contact .contact-left .fieldset .field select,
+.main-contact .contact-left .fieldset .field textarea {
+  background: #ebebeb;
+  background-clip: padding-box;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  color: #1d1d1d;
+  font-family: 'AktivGrotesk_Regular', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  height: 36px;
+  line-height: normal;
+  padding: 0 10px;
+  vertical-align: baseline;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+}
+.main-contact .contact-left .fieldset .field textarea {
+  padding: 7px 10px 7px;
+}
+.main-contact .contact-left .fieldset .field .minimum-lenght-4 {
+  height: 80px;
+}
+.main-contact .contact-left .button-submit .action {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: background 0.5s ease;
+  background: #ffffff;
+  border: 1px solid #1d1d1d;
+  color: #1d1d1d;
+  cursor: pointer;
+  font-family: 'AktivGrotesk_Bold', 'Helvetica Neue Bold', sans-serif;
+  padding: 6px 24px 6px;
+  font-size: 11px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+.main-contact .contact-right {
+  flex: 1 1 50%;
+  padding: 8px 0px 0 113px;
+}
+.main-contact .contact-right h1 {
+  font-size: 30px;
+  line-height: 25px;
+  font-family: 'AktivGrotesk_Hairl ine', sans-serif;
+  margin-bottom: 37px;
+}
+.main-contact .contact-right .contact-content > div {
+  margin-top: 45px;
+}
+.main-contact .contact-right .contact-content .email a {
+  text-decoration: underline;
+  font-family: 'AktivGrotesk_Bold';
+  font-weight: bold;
+}
+.main-contact .contact-right .contact-content .email a:hover {
+  color: #8a8888;
+  text-decoration: none;
+}
+.main-contact .contact-right .contact-content .detail-ct-l span {
+  display: block;
+  width: 97px;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.main-contact .contact-right .contact-content .detail-ct-l .house {
+  background-image: url("https://www.kingliving.com.au/pub/static/version1732070838/frontend/Playhouse/Kingliving/en_AU/Magento_Contact/images/house.png");
+}
+.main-contact .contact-right .contact-content .detail-ct-l .question {
+  background-image: url("https://www.kingliving.com.au/pub/static/version1732070838/frontend/Playhouse/Kingliving/en_AU/Magento_Contact/images/talk.png");
+}
+.main-contact .contact-right .contact-content .detail-ct-l .spanner {
+  background-image: url("https://www.kingliving.com.au/pub/media/wysiwyg/spanner.png");
+}
+.main-contact .contact-right .contact-content .detail-ct-l .people {
+  background-image: url("https://www.kingliving.com.au/pub/static/version1732070838/frontend/Playhouse/Kingliving/en_AU/Magento_Contact/images/car.png");
+}
+.main-contact .contact-right .contact-content .detail-ct-l .fabric {
+  background-image: url("https://www.kingliving.com.au/pub/media/wysiwyg/fabric1.png");
+}
+.main-contact .contact-right .contact-content .detail-ct-l .transfer {
+  background-image: url("https://www.kingliving.com.au/pub/static/version1732070838/frontend/Playhouse/Kingliving/en_AU/Magento_Contact/images/sp.png");
+}
+.main-contact .contact-right .contact-content .detail-ct-r {
+  flex: 1 1 calc(3%);
+}
+.main-contact .contact-right .contact-content .detail-ct-r .title,
+.main-contact .contact-right .contact-content .detail-ct-r .fd-showroom-link {
+  margin: 0 0 5px;
+  font-family: 'AktivGrotesk_Bold';
+  font-weight: bold;
+}
+.main-contact .contact-right .contact-content .wraper-locate,
+.main-contact .contact-right .contact-content .wraper-delivery,
+.main-contact .contact-right .contact-content .wraper-sale {
+  display: flex;
+}
 .column .block-addbysku .fieldset {
   margin: 0;
 }
